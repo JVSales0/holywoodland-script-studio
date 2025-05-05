@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed w-full z-30 transition-all duration-300 ${
-        scrolled ? 'bg-hollywood-black/90 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-5'
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? 'bg-hollywood-black/80 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -41,14 +41,14 @@ const Navbar = () => {
           <Link to="/roteiros" className="text-white hover:text-hollywood-gold transition-colors">
             Roteiros
           </Link>
-          <Link to="/elenco" className="text-white hover:text-hollywood-gold transition-colors">
-            Elenco
+          <Link to="/talentos" className="text-white hover:text-hollywood-gold transition-colors">
+            Banco de Talentos
           </Link>
           <Link to="/blog" className="text-white hover:text-hollywood-gold transition-colors">
             Blog
           </Link>
-          <Link to="/contato" className="text-white hover:text-hollywood-gold transition-colors">
-            Contato
+          <Link to="/comunidade" className="text-white hover:text-hollywood-gold transition-colors">
+            Comunidade
           </Link>
           <Button className="bg-hollywood-gold hover:bg-hollywood-gold/90 text-hollywood-black">
             Login / Cadastro
@@ -77,21 +77,21 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden absolute w-full bg-hollywood-black/95 backdrop-blur-md transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
           <Link to="/roteiros" className="text-white hover:text-hollywood-gold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
             Roteiros
           </Link>
-          <Link to="/elenco" className="text-white hover:text-hollywood-gold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
-            Elenco
+          <Link to="/talentos" className="text-white hover:text-hollywood-gold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+            Banco de Talentos
           </Link>
           <Link to="/blog" className="text-white hover:text-hollywood-gold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
             Blog
           </Link>
-          <Link to="/contato" className="text-white hover:text-hollywood-gold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
-            Contato
+          <Link to="/comunidade" className="text-white hover:text-hollywood-gold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+            Comunidade
           </Link>
           <Button className="bg-hollywood-gold hover:bg-hollywood-gold/90 text-hollywood-black w-full">
             Login / Cadastro
