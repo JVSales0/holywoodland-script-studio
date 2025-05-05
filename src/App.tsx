@@ -11,6 +11,7 @@ import Blog from "./pages/Blog";
 import Comunidade from "./pages/Comunidade";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+import Editor from "./pages/Editor";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/comunidade" element={<Comunidade />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/editor" element={<Editor />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
